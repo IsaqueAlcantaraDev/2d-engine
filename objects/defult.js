@@ -1,8 +1,8 @@
 export class defaultObject {
-    constructor(position){
+    constructor(position, width, height){
         this.position = position ? position : {x: 0, y: 0}
-        this.width = 60 
-        this.height = 60 
+        this.width = width ? width : 60
+        this.height = height ? height : 60
     }
     render(context) {
         context.fillRect(
